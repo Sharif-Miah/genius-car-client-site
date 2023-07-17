@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../../assets/logo.svg'
 
 const Navbar = () => {
     const itemMenu = <>
-    <Link className='px-3'>Home</Link>
-    <Link className='px-3'>About</Link>
-    <Link className='px-3'>Service</Link>
-    <Link className='px-3'>Blog</Link>
-    <Link className='px-3'>Contacr</Link>
-    <Link className='px-3'>Login</Link>
-    <Link className='px-3'>Register</Link>
+    <Link to='/' className='px-3'>Home</Link>
+    <Link to='/about' className='px-3'>About</Link>
+    <Link to='/service' className='px-3'>Service</Link>
+    <Link to='/blog' className='px-3'>Blog</Link>
+    <Link to='/contact' className='px-3'>Contact</Link>
+    <Link to='/login' className='px-3'>Login</Link>
+    <Link to='/register' className='px-3'>Register</Link>
     </>
 
     return (
@@ -23,7 +24,9 @@ const Navbar = () => {
         {itemMenu}
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+    <Link to='/' className="btn btn-ghost normal-case text-xl">
+      <img width={75} src={logo} alt="" />
+    </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
