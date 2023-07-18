@@ -1,35 +1,117 @@
 import React from "react";
-import { FiArrowRight} from 'react-icons/fi';
-import { FiArrowLeft} from 'react-icons/fi';
+import { FiArrowRight } from "react-icons/fi";
+import { FiArrowLeft } from "react-icons/fi";
+
+import img1 from "../../../assets/images/banner/1.jpg";
+import img2 from "../../../assets/images/banner/2.jpg";
+import img3 from "../../../assets/images/banner/3.jpg";
+import img4 from "../../../assets/images/banner/4.jpg";
+import img5 from "../../../assets/images/banner/5.jpg";
+import img6 from "../../../assets/images/banner/6.jpg";
+import './Slider.css'
 
 const Slider = () => {
+  const sliderItems = [
+    {
+      img: img1,
+      prev: 6,
+      id: 1,
+      next: 2,
+    },
+    {
+      img: img2,
+      prev: 1,
+      id: 2,
+      next: 3,
+    },
+    {
+      img: img3,
+      prev: 2,
+      id: 3,
+      next: 4,
+    },
+    {
+      img: img4,
+      prev: 3,
+      id: 4,
+      next: 5,
+    },
+    {
+      img: img5,
+      prev: 4,
+      id: 5,
+      next: 6,
+    },
+    {
+      img: img6,
+      prev: 5,
+      id: 6,
+      next: 1,
+    },
+  ];
+
   return (
-    <div className="carousel w-full">
+    <div className="carousel mt-5">
       <div id="slide1" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-          className="w-full"
-        />
+        <div className="img-gradient">
+          <img src={img1} className="w-full" alt="" />
+        </div>
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4 ">
+          <h1 className="text-6xl text-white font-bold">
+            Affordabe <br />
+            Price For Car <br />
+            Servicing
+          </h1>
+        </div>
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 md:mt-72 lg:mt-96">
+          <p className="text-xl text-white">
+            There are many variations of passages of available, <br /> but the
+            majority have suffered alteration in some form
+          </p>
+        </div>
+
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 top-2/3 ">
+          <button className="btn bg-red-700 border border-red-700 hover:bg-red-700 hover:border-red-700 text-white mr-3">
+            Discover More
+          </button>
+          <button className="btn btn-outline border-white text-white hover:bg-red-700 hover:border-red-700">
+            Latest Project
+          </button>
+        </div>
+
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide4" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-            <FiArrowLeft/>
+          <a
+            href="#slide4"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowLeft />
           </a>
-          <a href="#slide2" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-          <FiArrowRight/>
+          <a
+            href="#slide2"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowRight />
           </a>
         </div>
       </div>
+
       <div id="slide2" className="carousel-item relative w-full">
         <img
           src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
           className="w-full"
         />
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide1" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-          <FiArrowLeft/>
+          <a
+            href="#slide1"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowLeft />
           </a>
-          <a href="#slide3" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-          <FiArrowRight/>
+          <a
+            href="#slide3"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowRight />
           </a>
         </div>
       </div>
@@ -39,11 +121,17 @@ const Slider = () => {
           className="w-full"
         />
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide2" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-          <FiArrowLeft/>
+          <a
+            href="#slide2"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowLeft />
           </a>
-          <a href="#slide4" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-          <FiArrowRight/>
+          <a
+            href="#slide4"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowRight />
           </a>
         </div>
       </div>
@@ -53,11 +141,17 @@ const Slider = () => {
           className="w-full"
         />
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide3" className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle">
-          <FiArrowLeft/>
+          <a
+            href="#slide3"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowLeft />
           </a>
-          <a href="#slide1" className="btn bg-red-600 border border-red-600 text-white ml-3 hover:text-black btn-circle">
-          <FiArrowRight/>
+          <a
+            href="#slide1"
+            className="btn bg-red-600 border border-red-600 text-white ml-3 hover:text-black btn-circle"
+          >
+            <FiArrowRight />
           </a>
         </div>
       </div>
