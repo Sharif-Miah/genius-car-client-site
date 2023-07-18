@@ -8,7 +8,7 @@ import img3 from "../../../assets/images/banner/3.jpg";
 import img4 from "../../../assets/images/banner/4.jpg";
 import img5 from "../../../assets/images/banner/5.jpg";
 import img6 from "../../../assets/images/banner/6.jpg";
-import './Slider.css'
+import "./Slider.css";
 
 const Slider = () => {
   const sliderItems = [
@@ -96,10 +96,33 @@ const Slider = () => {
       </div>
 
       <div id="slide2" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-          className="w-full"
-        />
+        <div className="img-gradient">
+          <img src={img2} className="w-full" alt="" />
+        </div>
+
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4 ">
+          <h1 className="text-6xl text-white font-bold">
+            Affordabe <br />
+            Price For Car <br />
+            Servicing
+          </h1>
+        </div>
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 md:mt-72 lg:mt-96">
+          <p className="text-xl text-white">
+            There are many variations of passages of available, <br /> but the
+            majority have suffered alteration in some form
+          </p>
+        </div>
+
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 top-2/3 ">
+          <button className="btn bg-red-700 border border-red-700 hover:bg-red-700 hover:border-red-700 text-white mr-3">
+            Discover More
+          </button>
+          <button className="btn btn-outline border-white text-white hover:bg-red-700 hover:border-red-700">
+            Latest Project
+          </button>
+        </div>
+
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
           <a
             href="#slide1"
@@ -115,11 +138,34 @@ const Slider = () => {
           </a>
         </div>
       </div>
+
       <div id="slide3" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-          className="w-full"
-        />
+        <div className="img-gradient">
+          <img src={img3} className="w-full" alt="" />
+        </div>
+
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4 ">
+          <h1 className="text-6xl text-white font-bold">
+            Affordabe <br />
+            Price For Car <br />
+            Servicing
+          </h1>
+        </div>
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 md:mt-72 lg:mt-96">
+          <p className="text-xl text-white">
+            There are many variations of passages of available, <br /> but the
+            majority have suffered alteration in some form
+          </p>
+        </div>
+
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 top-2/3 ">
+          <button className="btn bg-red-700 border border-red-700 hover:bg-red-700 hover:border-red-700 text-white mr-3">
+            Discover More
+          </button>
+          <button className="btn btn-outline border-white text-white hover:bg-red-700 hover:border-red-700">
+            Latest Project
+          </button>
+        </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
           <a
             href="#slide2"
@@ -135,14 +181,126 @@ const Slider = () => {
           </a>
         </div>
       </div>
+
       <div id="slide4" className="carousel-item relative w-full">
-        <img
-          src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-          className="w-full"
-        />
+        <div className="img-gradient">
+          <img src={img4} className="w-full" alt="" />
+        </div>
+
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4 ">
+          <h1 className="text-6xl text-white font-bold">
+            Affordabe <br />
+            Price For Car <br />
+            Servicing
+          </h1>
+        </div>
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 md:mt-72 lg:mt-96">
+          <p className="text-xl text-white">
+            There are many variations of passages of available, <br /> but the
+            majority have suffered alteration in some form
+          </p>
+        </div>
+
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 top-2/3 ">
+          <button className="btn bg-red-700 border border-red-700 hover:bg-red-700 hover:border-red-700 text-white mr-3">
+            Discover More
+          </button>
+          <button className="btn btn-outline border-white text-white hover:bg-red-700 hover:border-red-700">
+            Latest Project
+          </button>
+        </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
           <a
             href="#slide3"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowLeft />
+          </a>
+          <a
+            href="#slide5"
+            className="btn bg-red-600 border border-red-600 text-white ml-3 hover:text-black btn-circle"
+          >
+            <FiArrowRight />
+          </a>
+        </div>
+      </div>
+
+
+      <div id="slide5" className="carousel-item relative w-full">
+        <div className="img-gradient">
+          <img src={img5} className="w-full" alt="" />
+        </div>
+
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4 ">
+          <h1 className="text-6xl text-white font-bold">
+            Affordabe <br />
+            Price For Car <br />
+            Servicing
+          </h1>
+        </div>
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 md:mt-72 lg:mt-96">
+          <p className="text-xl text-white">
+            There are many variations of passages of available, <br /> but the
+            majority have suffered alteration in some form
+          </p>
+        </div>
+
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 top-2/3 ">
+          <button className="btn bg-red-700 border border-red-700 hover:bg-red-700 hover:border-red-700 text-white mr-3">
+            Discover More
+          </button>
+          <button className="btn btn-outline border-white text-white hover:bg-red-700 hover:border-red-700">
+            Latest Project
+          </button>
+        </div>
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+          <a
+            href="#slide4"
+            className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
+          >
+            <FiArrowLeft />
+          </a>
+          <a
+            href="#slide6"
+            className="btn bg-red-600 border border-red-600 text-white ml-3 hover:text-black btn-circle"
+          >
+            <FiArrowRight />
+          </a>
+        </div>
+      </div>
+
+
+
+      <div id="slide6" className="carousel-item relative w-full">
+        <div className="img-gradient">
+          <img src={img4} className="w-full" alt="" />
+        </div>
+
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4 ">
+          <h1 className="text-6xl text-white font-bold">
+            Affordabe <br />
+            Price For Car <br />
+            Servicing
+          </h1>
+        </div>
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 md:mt-72 lg:mt-96">
+          <p className="text-xl text-white">
+            There are many variations of passages of available, <br /> but the
+            majority have suffered alteration in some form
+          </p>
+        </div>
+
+        <div className="absolute flex justify-end  transform -translate-y-1/2 left-5 top-2/3 ">
+          <button className="btn bg-red-700 border border-red-700 hover:bg-red-700 hover:border-red-700 text-white mr-3">
+            Discover More
+          </button>
+          <button className="btn btn-outline border-white text-white hover:bg-red-700 hover:border-red-700">
+            Latest Project
+          </button>
+        </div>
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+          <a
+            href="#slide5"
             className="btn bg-red-600 border hover:text-black border-red-600 text-white ml-3 btn-circle"
           >
             <FiArrowLeft />
@@ -155,6 +313,11 @@ const Slider = () => {
           </a>
         </div>
       </div>
+
+
+
+
+
     </div>
   );
 };
