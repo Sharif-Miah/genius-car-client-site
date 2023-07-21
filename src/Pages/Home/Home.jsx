@@ -1,11 +1,12 @@
 import React from 'react';
-import Heder from '../Heder/Heder';
 import Slider from './Slider/Slider';
+import HomeAbout from './HomeAbout/HomeAbout';
 
 const Home = () => {
     return (
         <div>
             <Slider/>
+            <HomeAbout/>
         </div>
     );
 };
