@@ -2,7 +2,7 @@ import React from "react";
 import { FiArrowRight } from 'react-icons/fi';
 
 const ServicesItem = ({service}) => {
-    const {_id, img, title, price} = service;
+    const { img, title, price} = service;
   return (
       <div className="card card-compact w-96 bg-base-100 shadow-xl">
         <figure>
