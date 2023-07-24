@@ -21,7 +21,7 @@ const Services = () => {
       <p className=" text-zinc-500 text-center">
         words which don't look even slightly believable.
       </p>
-      <div className="grid grid-cols-3 my-12 gap-5">
+      <div className="grid grid-cols-1  lg:grid-cols-3 my-12 gap-5">
         {services?.map((service) => (
           <ServicesItem key={service._id} service={service} />
         ))}
