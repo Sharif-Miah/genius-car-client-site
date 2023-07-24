@@ -13,10 +13,10 @@ import img6 from "../../../assets/images/banner/banner6.jpg";
 const Team = () => {
   return (
     <div>
-      <div className=" my-12">
+      <div className=" my-24">
         <div>
           <h4 className="text-center text-red-500 text-md font-bold">Team</h4>
-          <h1 className="text-center text-5xl font-bold mb-5">Meet Our Team</h1>
+          <h1 className="text-center text-5xl font-bold mb-2">Meet Our Team</h1>
           <p className=" text-zinc-500 text-center">
             the majority have suffered alteration in some form, by injected
             humour, or randomised
